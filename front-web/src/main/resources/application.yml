@@ -1,0 +1,19 @@
+server:
+  port: 1000
+spring:
+  #≈‰÷√ ˝æ›‘¥
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    hikari:
+      read-only: false
+      connection-timeout: 30000
+      idle-timeout: 60000
+      max-lifetime: 1800000
+      maximum-pool-size: 60
+      minimum-idle: 10
+mybatis:
+  type-aliases-package: com.example.dao.mapper
+  mapper-locations: /mapper/*.xml
