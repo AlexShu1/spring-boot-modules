@@ -20,6 +20,21 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  session:
+    store-type: redis
+  #配置redis数据库连接
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    timeout: 3600 # 连接超时时间（毫秒）
+    jedis:
+      pool:
+        max-idle: 20      # 连接池中的最大空闲连接
+        min-idle: 1
+        max-active: 20    # 连接池最大连接数（使用负值表示没有限制）
+        max-wait: 60000   #连接池最大阻塞等待时间
+    database: 0   #默认是索引为的0的数据库
   mail:
     host: smtp.qq.com
     username: 51103942@qq.com
@@ -32,8 +47,6 @@ spring:
           starttls:
             enable: true
             required: true
-
-
 mybatis:
   type-aliases-package: com.example.dao.mapper
   mapper-locations: /mapper/*.xml

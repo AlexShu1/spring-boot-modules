@@ -1,10 +1,11 @@
 package com.example.frontweb.controller;
 
-import com.example.bean.Email;
+
 import com.example.bean.ResultUtil;
 import com.example.bean.mybatis.User;
 import com.example.daojpa.UserJPA;
-import com.example.service.IMailService;
+import com.example.mail.bean.Email;
+import com.example.mail.service.IMailService;
 import com.example.service.IUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

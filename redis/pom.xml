@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>utils</artifactId>
+	<artifactId>redis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>utils</name>
+	<name>redis</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -26,10 +26,7 @@
 
 	<dependencies>
 
-
-
-
-    </dependencies>
+	</dependencies>
 
 	<build>
 		<plugins>

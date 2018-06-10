@@ -1,6 +1,7 @@
-package com.example.service;
+package com.example.mail.service;
 
-import com.example.bean.Email;
+
+import com.example.mail.bean.Email;
 
 /**
  * Created by LiQian_Nice on 2018/6/9
