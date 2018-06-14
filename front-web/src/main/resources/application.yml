@@ -16,10 +16,17 @@ spring:
       max-lifetime: 1800000
       maximum-pool-size: 60
       minimum-idle: 10
+
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+  data:
+    elasticsearch:
+      path:
+        logs: ./elasticsearch/log #elasticsearch日志存储目录
+        data: ./elasticsearch/data #elasticsearch数据存储目录
+
   session:
     store-type: redis
   #配置redis数据库连接

@@ -42,6 +42,8 @@
 		<module>exception</module>
 		<module>swagger-ui</module>
 		<module>logback</module>
+		<module>elasticsearch</module>
+		<module>zxing</module>
 	</modules>
 
 
@@ -94,6 +96,12 @@
 		<groupId>redis.clients</groupId>
 		<artifactId>jedis</artifactId>
 	</dependency>
+	<!--elasticsearch-->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+	</dependency>
+
 	<!-- Spring Session  依赖 -->
 	<dependency>
 		<groupId>org.springframework.session</groupId>
@@ -169,12 +177,28 @@
 		<artifactId>shiro-spring</artifactId>
 		<version>${shiro}</version>
 	</dependency>-->
-	<!--Zxing二维码-->
+
+	<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-lang3</artifactId>
+		<version>3.7</version>
+	</dependency>
+
+	<!-- 模拟HTTP请求 -->
+	<dependency>
+		<groupId>org.apache.httpcomponents</groupId>
+		<artifactId>httpclient</artifactId>
+		<version>4.5.2</version>
+	</dependency>
+	<!--zxing 库-->
+
 	<dependency>
 		<groupId>com.google.zxing</groupId>
 		<artifactId>core</artifactId>
 		<version>3.3.0</version>
 	</dependency>
+
 	<!--excel处理-->
 	<dependency>
 		<groupId>com.alibaba</groupId>
@@ -211,12 +235,7 @@
 		<version>1.0.0</version>
 	</dependency>
 
-	<!-- 模拟HTTP请求 -->
-	<dependency>
-		<groupId>org.apache.httpcomponents</groupId>
-		<artifactId>httpclient</artifactId>
-		<version>4.5.2</version>
-	</dependency>
+
 
 	<!--JWT生成token-->
 	<dependency>
